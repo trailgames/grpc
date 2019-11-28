@@ -36,6 +36,7 @@
 
 /* Get windows.h included everywhere (we need it) */
 #if defined(_WIN64) || defined(WIN64) || defined(_WIN32) || defined(WIN32)
+#include <SDKDDKVer.h>
 #ifndef WIN32_LEAN_AND_MEAN
 #define GRPC_WIN32_LEAN_AND_MEAN_WAS_NOT_DEFINED
 #define WIN32_LEAN_AND_MEAN
