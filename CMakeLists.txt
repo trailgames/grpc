@@ -62,16 +62,16 @@ set(gRPC_INSTALL ${gRPC_INSTALL_default} CACHE BOOL
 # "package": use cmake's find_package functionality to locate a pre-installed dependency
 
 set(gRPC_ZLIB_PROVIDER "module" CACHE STRING "Provider of zlib library")
-set_property(CACHE gRPC_ZLIB_PROVIDER PROPERTY STRINGS "module" "package")
+set_property(CACHE gRPC_ZLIB_PROVIDER PROPERTY STRINGS "module" "package" "internal")
 
 set(gRPC_CARES_PROVIDER "module" CACHE STRING "Provider of c-ares library")
-set_property(CACHE gRPC_CARES_PROVIDER PROPERTY STRINGS "module" "package")
+set_property(CACHE gRPC_CARES_PROVIDER PROPERTY STRINGS "module" "package" "internal")
 
 set(gRPC_SSL_PROVIDER "module" CACHE STRING "Provider of ssl library")
-set_property(CACHE gRPC_SSL_PROVIDER PROPERTY STRINGS "module" "package")
+set_property(CACHE gRPC_SSL_PROVIDER PROPERTY STRINGS "module" "package" "internal")
 
 set(gRPC_PROTOBUF_PROVIDER "module" CACHE STRING "Provider of protobuf library")
-set_property(CACHE gRPC_PROTOBUF_PROVIDER PROPERTY STRINGS "module" "package")
+set_property(CACHE gRPC_PROTOBUF_PROVIDER PROPERTY STRINGS "module" "package" "internal")
 
 set(gRPC_PROTOBUF_PACKAGE_TYPE "" CACHE STRING "Algorithm for searching protobuf package")
 set_property(CACHE gRPC_PROTOBUF_PACKAGE_TYPE PROPERTY STRINGS "CONFIG" "MODULE")
